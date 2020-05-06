@@ -113,7 +113,7 @@ let questions = [
 const questionsLength = questions.length;
 
 const correctScoreBonus = 10;
-const maxQuestions = 6;
+const maxQuestions = 1;
 
 function startGame() {
     finalScoreVariable = 0;
@@ -127,7 +127,7 @@ function startGame() {
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-        return window.location.assign('../gameover.html');
+        return window.location.assign('./gameover.html');
     }
 
     questionCounter++;
