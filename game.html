@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/launch.css">
+    <link rel="stylesheet" href="css/game.css">
+    <title>gQuiz | Game</title>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <section style="display:none;" id="myDiv" class="animate-bottom">
+    <section class="container">
+        <main>
+            <div class="header">
+                <div class="logo">
+                    <img src="img/Logo.svg" alt="Logo">
+                </div>
+                <p>
+                    This quiz is intended to test your knowledge on FrontEnd dev.
+                    Provide ONLY correct answers in order to climb!
+                </p>
+            </div>
+            <div class="game-section">
+                <div class="game">
+                    <div class="game-container">
+                        <h2 id="question">What is the answer to this question?</h2>
+                        <div class="choice-container" id="option-1">
+                            <p class="choice-prefix">1</p>
+                            <p class="choice-content" data-number="1">Choice 1</p>
+                        </div>
+                        <div class="choice-container" id="option-2">
+                            <p class="choice-prefix">2</p>
+                            <p class="choice-content" data-number="2">Choice 2</p>
+                        </div>
+                        <div class="choice-container" id="option-3">
+                            <p class="choice-prefix">3</p>
+                            <p class="choice-content" data-number="3">Choice 3</p>
+                        </div>
+                        <div class="choice-container" id="option-4">
+                            <p class="choice-prefix">4</p>
+                            <p class="choice-content" data-number="4">Choice 4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" onclick="getNewQuestion()">Next</button>
+                </div>
+                
+
+                <div class="h-display">
+                    <div class="h-item">
+                        <p class="h-prefix">
+                            Question
+                        </p>
+                        <h1 id="question-counter">
+                        </h1>
+                    </div>
+                    <div class="h-item">
+                        <p class="h-prefix">
+                            Score
+                        </p>
+                        <h1 id="score">
+                            0
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </main>    
+    </section>
+    </section>
+    <script src="js/loader.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

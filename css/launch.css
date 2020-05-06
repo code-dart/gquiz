@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.buttons p {
+    text-align: center;
+}
+
+.buttons p a {
+    margin: .5rem 0;
+    display: inline-block;
+    width: 8rem;
+    padding: .8rem;
+    border: #3040C4 1.5px solid;
+    border-radius: 100px;
+    background-color: #fff;
+    color: rgb(29, 39, 126);
+    font-size: .8rem;
+    text-decoration: none;
+    transition: all .6s;
+    font-weight: 400;
+}
+
+.buttons p a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 1px #ddd, 0 10px 10px #ddd;
+}
