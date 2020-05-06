@@ -113,7 +113,7 @@ let questions = [
 const questionsLength = questions.length;
 
 const correctScoreBonus = 10;
-const maxQuestions = 6;
+const maxQuestions = 5;
 
 function startGame() {
     finalScoreVariable = 0;
